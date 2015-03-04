@@ -10,8 +10,8 @@ public class CourseStats {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Course Stats program 1");
-		WeekTime starttime=null;
-		WeekTime finishtime=null;
+		WeekTime starttime=new WeekTime("mon",00,30,"pm");;
+		WeekTime finishtime=new WeekTime("mon",00,30,"pm");;
 		Course c = new Course("CSCe", 110, "MatthewsA",starttime,finishtime);
 		System.out.println(c.toString());
 		CourseMeeting meeting = new CourseMeeting("SWGN 3A01", "TR", "8:30-9:45", c);
@@ -62,6 +62,7 @@ public class CourseStats {
 					System.out.println("Data error line=" +  linecounter + "["+ line + "]");
 					System.out.println(field.length);
 				}
+				scanner.close();
 		}
 			
 		} catch (FileNotFoundException e){
@@ -73,6 +74,6 @@ public class CourseStats {
 		}
 		
 		
-
+		
 	}
 }

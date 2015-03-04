@@ -22,7 +22,7 @@ public class TestCouse_Constructor {
 		 when(starttime_c1.getDay()).thenReturn("mon");
 		//assertTrue(c.coursename=="software testing");
 		//assertTrue(c.starttime.ampm==starttime_c1.day);
-		assertEquals(c.starttime.ampm,starttime_c1.getDay());
+		assertEquals(c.starttime.day,starttime_c1.getDay());
 	}
 	@Test
 	public void testingConstructor_Success_dept() {
